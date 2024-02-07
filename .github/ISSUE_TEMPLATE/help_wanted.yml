@@ -1,0 +1,33 @@
+name: Help / Question
+description: Request assistance or ask a question
+labels: ["help"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need assistance or have a question? We're here to help!
+
+        Please provide as much detail as possible so we can assist you effectively.
+  - type: textarea
+    attributes:
+      label: Question or Issue
+      description: Please describe your question or issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Context
+      description: Provide any relevant context or background information.
+  - type: dropdown
+    attributes:
+      label: Urgency
+      default: "Low"
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Any additional details you think would be helpful.
+

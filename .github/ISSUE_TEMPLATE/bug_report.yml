@@ -1,0 +1,50 @@
+name: Bug report
+description: Report an issue
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+
+        To help us reproduce and categorize the issue, please fill out the following form.
+  - type: textarea
+    attributes:
+      label: Reproducing
+      description: Please describe the steps that led to the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What was expected?
+      description: Please describe the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What actually happened?
+      description: Please describe the actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Logs
+      description: Please paste the trace here, if applicable.
+  - type: dropdown
+    attributes:
+      label: Operating system
+      options:
+        - "Linux"
+        - "MacOS"
+        - "Windows"
+  - type: dropdown
+    attributes:
+      label: Architecture
+      options:
+        - "amd64"
+        - "arm64"
+        - "Other"
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Please add any information you think is useful.
